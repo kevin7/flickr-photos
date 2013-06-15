@@ -1,0 +1,49 @@
+body {
+    font: 16px/1 Helvetica, sans-serif;
+}
+
+
+#photos {
+    float: left;
+    width: 100%;
+}
+
+.photo {
+    float: left;
+    margin: 0 2px 2px 0;
+    overflow: hidden;
+    height: 160px;
+    position: relative;
+}
+
+.photo,
+.photo img {
+    min-width: 160px;
+    max-width: 240px;
+}
+
+.photo a.fav {
+	position: absolute;
+	bottom: 10px;
+	right:10px;	
+	z-index:100;
+	color: #ccc;
+	font-size:20px;	
+	cursor:pointer;
+}
+
+/*
+.photo a.fav:hover {
+	color:#c00;
+}
+*/
+
+.photo a.fav.fav-active {
+	color:#c00;
+}
+/*
+
+.photo a.fav.fav-active:hover {
+	color: #ccc;
+}
+*/
